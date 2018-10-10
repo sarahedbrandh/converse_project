@@ -7,12 +7,11 @@ function navToggle() {
     }
 }
 
+
+
+//
 //TODO: menuClick(event) -> dölja alla sectioner .section-content  (hideContent())
 //                       -> visa innehåll för aktuell .section-content #content-?   (showContent(event))
-
-document.querySelector('.menu-items')
-
-function menuClick(EventTarget)
 
 //TODO: hideContent()         hämta alla divar och sätt dem till hidden
 //TODO: showContent(event)    visability: visable  hämta div med motsvarande id och gör den visable

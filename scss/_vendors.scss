@@ -1,0 +1,23 @@
+#vendor-list-wrapper {
+    display: block;
+    position: absolute;
+    background-color: green;
+    width: 100%;
+    height: auto;
+    top: calc(100% - 100px);
+    left:0;
+    right: 0;
+    
+    
+    #vendor-list-content {
+        background-color: red;
+        margin: 0 auto;
+        #vendor-list-header {
+            height: 10px;
+        }
+        #vendor-list-vendors {
+            height: auto;
+        }
+    }
+}
+          

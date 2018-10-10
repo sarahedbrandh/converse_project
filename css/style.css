@@ -44,3 +44,20 @@
     display: inline-block; } }
 .section-content {
   visibility: hidden; }
+
+#vendor-list-wrapper {
+  display: block;
+  position: absolute;
+  background-color: green;
+  width: 100%;
+  height: auto;
+  top: calc(100% - 100px);
+  left: 0;
+  right: 0; }
+  #vendor-list-wrapper #vendor-list-content {
+    background-color: red;
+    margin: 0 auto; }
+    #vendor-list-wrapper #vendor-list-content #vendor-list-header {
+      height: 10px; }
+    #vendor-list-wrapper #vendor-list-content #vendor-list-vendors {
+      height: auto; }
