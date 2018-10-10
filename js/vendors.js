@@ -5,8 +5,17 @@ var vendorElement = document.querySelector("#vendor-list-wrapper");
 var vendorList = document.querySelector("#vendor-list-vendors");
 
 showVendorsText.addEventListener('click', showVendors, false);
+showVendorsText.addEventListener('click', changeText, false);
 
-
+function changeText(event) {
+    if(event.target.innerHTML == 'Show Vendors') {
+        //byt till Hide Vendors
+        event.target.innerHTML = "Hide Vendors";
+    } else {
+        //byt till Show Vendors
+        event.target.innerHTML = "Show Vendors";
+    }
+}
 
 function showVendors(){ 
     vendorElement.style.top = "500px"; //TODO: calc hur långt upp ska den
@@ -24,7 +33,7 @@ function hideVendors() {
     vendorList.style.overflow = "hidden";
 }
 
-
+//TODO: change Text in hide Vendors and show Vendors
 
 
 
