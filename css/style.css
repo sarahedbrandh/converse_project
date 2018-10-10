@@ -53,11 +53,17 @@
   height: auto;
   top: calc(100% - 100px);
   left: 0;
-  right: 0; }
+  right: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
   #vendor-list-wrapper #vendor-list-content {
     background-color: red;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     #vendor-list-wrapper #vendor-list-content #vendor-list-header {
-      height: 10px; }
+      height: 10em; }
     #vendor-list-wrapper #vendor-list-content #vendor-list-vendors {
-      height: auto; }
+      height: auto;
+      position: relative;
+      display: block;
+      overflow: hidden; }
