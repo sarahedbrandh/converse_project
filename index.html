@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body> 
+<body>
+    <header>
+
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html">Collection</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Vendors</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="javascript:void(0);" id="menu-icon" onclick="navToggle()">MENU</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <script>
+        
+        function navToggle() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " dropped";
+            } else {
+                x.className = "topnav";
+            }
+        }
+         
+    </script>
+
+    <main>
+        <div id="content-wrapper">
+            <div>
+                <div class="section-content" id="content-collection">collection</div>
+                <div class="section-content" id="content-about">about</div>
+                <div class="section-content" id="content-products">products</div>
+                <div class="section-content" id="content-vendors">vendor</div>
+                <div class="section-content" id="content-contact">contact</div>
+            </div>
+        </div>
+    </main>
+>>>>>>> 40be03d5b685c8723459d501d1f927dc21dae3f0
 </body>
 </html>
