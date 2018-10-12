@@ -1,51 +1,58 @@
 #vendor-list-wrapper {
     display: block;
     position: absolute;
-    background-color: green;
-    width: 100%;
     height: auto;
-    top: calc(100% - 10vh);
+    top: calc(100vh - 80px);
     left:0;
     right: 0;
-    transition-duration: 0.5s;
+    transition: 0.5s;
     
-    
-    
+
     #vendor-list-content {
-        background-color: red;
         margin: 0 auto;
         position: relative;
+        box-sizing: border-box;
         
-        
-       
+        border: 0.1px solid $line-color;
+
         #vendor-list-header {
-            height: 10vh;
-            background-color: green;
-           display: flex;
+  
+            display: flex;
             justify-content: space-between;
-            padding: 1em;
-            
+            padding: 1.5em 3em;
+            border: 0.1px solid $line-color;
             h2 {
                 margin: 0;
-
             }
-            
-           
-           
-
+            i {
+                font-size: 2em;
+            }
         }:hover {
             cursor: pointer;
         }
-
-
 
         #vendor-list-vendors {
             height: auto;
             position: relative;
             display: block;
-            overflow: hidden;
+           
+            padding: 2em;
+            overflow: scroll;
+            height: 50vh;
             
+            display: flex;
+            flex-wrap: wrap;
+            
+            .vendor-item {
+                margin: 1em 4em;
+            }
         }
     }
 }
-          
+
+@media screen and (min-width: $break-point) {
+    #vendor-list-wrapper {
+        padding: 0 4em;
+    }
+}
+    

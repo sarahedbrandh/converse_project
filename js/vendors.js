@@ -6,19 +6,20 @@ var vendorList = document.querySelector("#vendor-list-vendors");
 
 
 vendorListHeader.addEventListener('click', showVendors, false);
-
+var heightVendorWrapper = vendorElement.offsetHeight;
+    console.log("höjden på wrappern är" + heightVendorWrapper);
 
 function changeVendorHeader() {
     var vendorListTitle = document.querySelector("#vendor-list-title");
     var icon = vendorListHeader.querySelector("i");
   
     if(vendorListHeader.className == 'hidden-list') {
-        vendorListTitle.innerHTML = "Hide Vendors";
+        vendorListTitle.innerHTML = "Close List";
         console.log("classnamnet är hidden-list");
         vendorListHeader.className = "visible-list";
         icon.className = "fas fa-angle-down";
     } else {
-        vendorListTitle.innerHTML = "Show Vendors";
+        vendorListTitle.innerHTML = "Show List";
         console.log("classnamnet är visibli-list");
         vendorListHeader.className = "hidden-list";
         icon.className = "fas fa-angle-up";
@@ -27,7 +28,9 @@ function changeVendorHeader() {
 }
 
 function showVendors(){ 
-    vendorElement.style.top = "500px"; //TODO: calc hur långt upp ska den
+    var fromTheTop = window.innerHeight - heightVendorWrapper;
+    vendorElement.style.top = "30vh"; 
+    
     changeVendorHeader();
     vendorListHeader.removeEventListener('click', showVendors, false);
     vendorListHeader.addEventListener('click', hideVendors, false);
@@ -39,8 +42,8 @@ function hideVendors() {
     
     vendorListHeader.removeEventListener('click', hideVendors, false);
     vendorListHeader.addEventListener('click', showVendors, false);
-    vendorElement.style.top = "calc(100% - 100px)";
-    vendorList.style.overflow = "hidden";
+    vendorElement.style.top = "calc(100% - 80px)"; //ändra stylen/positionen på content-listen
+    
     changeVendorHeader();
 }
 

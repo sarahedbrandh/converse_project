@@ -2,15 +2,23 @@
 h1, h2, h3, h4, h5, h6 {
   color: "#151515";
   text-transform: uppercase;
-  font-family: "Monteserrat, Sans Serif"; }
+  font-family: "Montserrat", "Sans Serif";
+  font-weight: lighter; }
 
 p {
   color: "#151515";
-  font-size: 1em; }
+  font-size: 1em;
+  font-family: "Times New Roman", "Serif"; }
+
+i {
+  font-weight: lighter; }
 
 img {
   width: 100%;
   height: auto; }
+
+body {
+  overflow: hidden; }
 
 .topnav {
   background-color: rgba(0, 0, 0, 0.5);
@@ -62,34 +70,48 @@ img {
 #vendor-list-wrapper {
   display: block;
   position: absolute;
-  background-color: green;
-  width: 100%;
   height: auto;
-  top: calc(100% - 10vh);
+  top: calc(100vh - 80px);
   left: 0;
   right: 0;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s; }
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
   #vendor-list-wrapper #vendor-list-content {
-    background-color: red;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 0.1px solid rgba(128, 128, 128, 0.199); }
     #vendor-list-wrapper #vendor-list-content #vendor-list-header {
-      height: 10vh;
-      background-color: green;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      padding: 1em; }
+      padding: 1.5em 3em;
+      border: 0.1px solid rgba(128, 128, 128, 0.199); }
       #vendor-list-wrapper #vendor-list-content #vendor-list-header h2 {
         margin: 0; }
+      #vendor-list-wrapper #vendor-list-content #vendor-list-header i {
+        font-size: 2em; }
     #vendor-list-wrapper #vendor-list-content :hover {
       cursor: pointer; }
     #vendor-list-wrapper #vendor-list-content #vendor-list-vendors {
       height: auto;
       position: relative;
       display: block;
-      overflow: hidden; }
+      padding: 2em;
+      overflow: scroll;
+      height: 50vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      #vendor-list-wrapper #vendor-list-content #vendor-list-vendors .vendor-item {
+        margin: 1em 4em; }
+
+@media screen and (min-width: 1000px) {
+  #vendor-list-wrapper {
+    padding: 0 4em; } }
