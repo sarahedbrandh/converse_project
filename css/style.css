@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+h1, h2, h3, h4, h5, h6 {
+  color: "#151515";
+  text-transform: uppercase;
+  font-family: "Monteserrat, Sans Serif"; }
+
+p {
+  color: "#151515";
+  font-size: 1em; }
+
+img {
+  width: 100%;
+  height: auto; }
+
 .topnav {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
