@@ -1,44 +1,47 @@
 // TODO: Ad google map with markers.
 // TODO: Show vendors() Lista slide up.
-var showVendorsHeader = document.querySelector("#vendor-list-header");
+var vendorListHeader = document.querySelector("#vendor-list-header");
 var vendorElement = document.querySelector("#vendor-list-wrapper");
 var vendorList = document.querySelector("#vendor-list-vendors");
 
-showVendorsHeader.addEventListener('click', changeText, false);
-showVendorsHeader.addEventListener('click', showVendors, false);
+
+vendorListHeader.addEventListener('click', showVendors, false);
 
 
-function changeText(event) {
+function changeVendorHeader() {
     var vendorListTitle = document.querySelector("#vendor-list-title");
+    var icon = vendorListHeader.querySelector("i");
   
-
-    if(vendorListTitle.className == 'hidden-list') {
+    if(vendorListHeader.className == 'hidden-list') {
         vendorListTitle.innerHTML = "Hide Vendors";
         console.log("classnamnet är hidden-list");
-        vendorListTitle.className = "visiblie-list";
+        vendorListHeader.className = "visible-list";
+        icon.className = "fas fa-angle-down";
     } else {
         vendorListTitle.innerHTML = "Show Vendors";
         console.log("classnamnet är visibli-list");
-        vendorListTitle.className = "hidden-list";
+        vendorListHeader.className = "hidden-list";
+        icon.className = "fas fa-angle-up";
     }
-
+  
 }
 
 function showVendors(){ 
     vendorElement.style.top = "500px"; //TODO: calc hur långt upp ska den
-    
-    showVendorsHeader.removeEventListener('click', showVendors, false);
-    showVendorsHeader.addEventListener('click', hideVendors, false);
+    changeVendorHeader();
+    vendorListHeader.removeEventListener('click', showVendors, false);
+    vendorListHeader.addEventListener('click', hideVendors, false);
     
     
 }
 
 function hideVendors() {
     
-    showVendorsHeader.removeEventListener('click', hideVendors, false);
-    showVendorsHeader.addEventListener('click', showVendors, false);
+    vendorListHeader.removeEventListener('click', hideVendors, false);
+    vendorListHeader.addEventListener('click', showVendors, false);
     vendorElement.style.top = "calc(100% - 100px)";
     vendorList.style.overflow = "hidden";
+    changeVendorHeader();
 }
 
 //TODO: change Text in hide Vendors and show Vendors
