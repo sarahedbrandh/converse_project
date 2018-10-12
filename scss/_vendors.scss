@@ -4,7 +4,7 @@
     background-color: green;
     width: 100%;
     height: auto;
-    top: calc(100% - 100px);
+    top: calc(100% - 10vh);
     left:0;
     right: 0;
     transition-duration: 0.5s;
@@ -16,10 +16,29 @@
         margin: 0 auto;
         position: relative;
         
+        
        
         #vendor-list-header {
-            height: 10em;
+            height: 10vh;
+            background-color: green;
+           display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            
+            h2 {
+                margin: 0;
+
+            }
+            
+           
+           
+
+        }:hover {
+            cursor: pointer;
         }
+
+
+
         #vendor-list-vendors {
             height: auto;
             position: relative;
