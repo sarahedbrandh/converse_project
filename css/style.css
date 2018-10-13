@@ -98,7 +98,7 @@ body {
   visibility: hidden; }
 
 #content-about {
-  visibility: hidden; }
+  visibility: visible; }
 
 #content-vendors {
   visibility: hidden; }
@@ -107,7 +107,9 @@ body {
   visibility: hidden; }
 
 #content-products {
-  visibility: visible;
+  visibility: hidden; }
+
+#content-products {
   height: inherit;
   background-color: inherit;
   overflow: scroll;
@@ -176,3 +178,14 @@ body {
 @media screen and (min-width: 1000px) {
   #vendor-list-wrapper {
     padding: 0 4em; } }
+#content-about {
+  display: grid;
+  height: 100vh;
+  overflow: scroll; }
+  #content-about #about-us-text {
+    padding: 8em 8em; }
+
+@media screen and (min-width: 800px) {
+  #content-about {
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden; } }

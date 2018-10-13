@@ -17,13 +17,17 @@
     }
  
     #content-about{
-        visibility: hidden;
+        visibility: visible;
     }
     #content-vendors{
         visibility: hidden;
        
     }
     #content-contact{
+        visibility: hidden;
+    }
+
+    #content-products {
         visibility: hidden;
     }
     

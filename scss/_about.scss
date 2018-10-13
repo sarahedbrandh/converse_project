@@ -1,0 +1,17 @@
+#content-about{
+    display: grid;
+    height: 100vh;
+    overflow: scroll;
+    #about-us-text{
+        padding: 8em 8em;
+    }
+}
+
+@media screen and (min-width: 800px){
+    #content-about{
+        grid-template-columns: repeat($columnAbout, 1fr);
+        overflow: hidden;
+        
+    }
+    
+}
