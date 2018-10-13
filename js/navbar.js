@@ -37,5 +37,13 @@ function changeNav(event) {
     var topNav = document.querySelector(".topnav");
     console.log(event.target.id);
     topNav.style.backgroundColor = "white";
+    removeHeaderImg();
 }
 
+
+// =============== Function for sliding up the header -background image ======== S//
+function removeHeaderImg(){
+    var headerImg = document.querySelector("#header-img");
+    console.log(headerImg);
+    headerImg.style.top = "-100vh";
+}
