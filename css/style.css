@@ -18,14 +18,26 @@ img {
   height: auto; }
 
 body {
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 0; }
+
+.section-content {
+  visibility: hidden; }
+
+#header-img {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url(../media/images/headerimg.jpg) no-repeat center center fixed;
+  background-size: cover; }
 
 .topnav {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0; }
+  left: 0;
+  height: 4em; }
 
 .topnav ul {
   list-style: none;
