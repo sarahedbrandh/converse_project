@@ -64,12 +64,12 @@ body {
 
   .topnav ul li a {
     display: inline-block; } }
-iframe {
+.map iframe {
   border: 0;
   width: 100%;
   height: calc(100vh);
   position: absolute;
-  top: 0;
+  top: 4em;
   left: 0;
   z-index: -9; }
 

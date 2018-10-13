@@ -1,11 +1,13 @@
-iframe {
+.map {
+    iframe {
     border: 0;
     width: 100%;
     height: calc(100vh);
     position: absolute;
-    top: 0;
+    top: $navbar-height; //lika hög som navbaren
     left: 0;
     z-index: -9;
+    }
 }
 #vendor-list-wrapper {
     display: block;
