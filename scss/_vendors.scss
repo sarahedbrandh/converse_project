@@ -1,73 +1,80 @@
 //Sara
-.map {
-    iframe {
-    border: 0;
-    width: 100%;
-    height: calc(100vh);
-    position: absolute;
-    top: inherit; //lika hög som navbaren
-    left: 0;
-    z-index: -9;
-    }
-}
-#vendor-list-wrapper {
-    
-    display: block;
-    position: absolute;
-    height: auto;
-    top: calc(200vh - 80px); //för att den ska slideas upp i samma takt som header bilden, så att den får lika långt på lika lång tid att slidea / S
-    left:0;
-    right: 0;
-    transition-duration: $transition-time;
-    
-    
 
-    #vendor-list-content {
-        margin: 0 auto;
-        position: relative;
-        box-sizing: border-box;
-        background-color: white;
-        border: 0.1px solid $line-color;
+#content-vendors{
+    width: 100vw;
+        height: 100vh;
+    .map {
+        iframe {
+        border: 0;
+        width: 100vw;
+        height: 90vh;
+        position: absolute;
+        top: $navbar-height; //lika hög som navbaren
+        left: 0;
+    
+        }
+    }
+    #vendor-list-wrapper{
+        display: block;
+        position: absolute;
+        height: auto;
+        top: calc(200vh - 50px); //för att den ska slideas upp i samma takt som header bilden, så att den får lika långt på lika lång tid att slidea / S
+        left:0;
+        right: 0;
+        transition-duration: $transition-time;
+        width: 100%;
+        
         
 
-        #vendor-list-header {
-  
-            display: flex;
-            justify-content: space-between;
-            padding: 1.5em 3em;
-            border: 0.1px solid $line-color;
-            h2 {
-                margin: 0;
-            }
-            i {
-                font-size: 2em;
-            }
-        }:hover {
-            cursor: pointer;
-        }
-
-        #vendor-list-vendors {
-            height: auto;
+        #vendor-list-content {
+            margin: 0 auto;
             position: relative;
-            display: block;
-           
-            padding: 2em;
-            overflow: scroll;
-            height: 50vh;
+            box-sizing: border-box;
+            background-color: white;
+            border: 0.1px solid $line-color;
             
-            display: flex;
-            flex-wrap: wrap;
+
+            #vendor-list-header {
+    
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5em 3em;
+                border: 0.1px solid $line-color;
+                h2 {
+                    margin: 0;
+                }
+                i {
+                    font-size: 2em;
+                }
+            }:hover {
+                cursor: pointer;
+            }
+
+            #vendor-list-vendors {
+                height: auto;
+                position: relative;
+                display: block;
             
-            .vendor-item {
-                margin: 1em 4em;
+                padding: 2em;
+                overflow: scroll;
+                height: 50vh;
+                
+                display: flex;
+                flex-wrap: wrap;
+                
+                .vendor-item {
+                    margin: 1em 4em;
+                }
             }
         }
     }
 }
-
-@media screen and (min-width: $break-point) {
+@media screen and (min-width: 800px) {
     #vendor-list-wrapper {
-        padding: 0 4em;
+
+        #vendor-list-content{
+            width: 80vw;
+        }
     }
 }
     

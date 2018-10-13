@@ -1,10 +1,9 @@
-#content-products{
-    
-    height: inherit;
+#content-products:not(.hidden){
+    display: grid;
+    height: 100vh;
     background-color: inherit;
     overflow: scroll;
     
-    display: grid;
     
 
     .product-text {

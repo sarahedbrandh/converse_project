@@ -2,32 +2,20 @@
     position: absolute;
     top: 100vh;
     height: 95vh;
-    z-index: -1;
+    z-index: -1; //för att komma under menyn
     
     transition-duration: $transition-time;
     left: 0;
   
 
 }
-    #content-collection{
-        visibility: hidden;
-    }
-    #content-contact{
-        visibility: hidden;
-    }
+   
+  
  
-    #content-about{
-        visibility: visible;
-    }
-    #content-vendors{
-        visibility: hidden;
+    
        
-    }
-    #content-contact{
-        visibility: hidden;
-    }
-
-    #content-products {
-        visibility: hidden;
-    }
+       
+       
+   
+    
     

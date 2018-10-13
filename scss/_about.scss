@@ -1,17 +1,22 @@
-#content-about{
+#content-about:not(.hidden){
     display: grid;
-    height: 100vh;
+    height: 100vh; 
     overflow: scroll;
+    
     #about-us-text{
-        padding: 8em 8em;
+        padding: 4em 1em;
     }
 }
 
 @media screen and (min-width: 800px){
-    #content-about{
+    #content-about:not(.hidden){
         grid-template-columns: repeat($columnAbout, 1fr);
         overflow: hidden;
+        #about-us-text{
+            padding: 8em; //varför stryker den denna?
+        }
         
     }
+    
     
 }
