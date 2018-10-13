@@ -1,3 +1,30 @@
-.section-content {
-    //visibility: hidden;
+#content-wrapper{
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+    padding: 4em;
+    transition-duration: $transition-time;
+    left: 0;
+    visibility: hidden;
 }
+    #content-collection{
+        visibility: inherit;
+    }
+    #content-contact{
+    }
+    #content-products{
+        visibility: visible;
+        height: inherit;
+        background-color: inherit;
+        
+    }
+    #content-about{
+        visibility: hidden;
+    }
+    #content-vendors{
+        visibility: hidden;
+       
+    }
+    #content-contact{}
+    #content-icon{}

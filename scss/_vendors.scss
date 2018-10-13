@@ -5,7 +5,7 @@
     width: 100%;
     height: calc(100vh);
     position: absolute;
-    top: $navbar-height; //lika hög som navbaren
+    top: inherit; //lika hög som navbaren
     left: 0;
     z-index: -9;
     }
@@ -15,10 +15,10 @@
     display: block;
     position: absolute;
     height: auto;
-    top: calc(100vh - 80px);
+    top: calc(200vh - 80px); //för att den ska slideas upp i samma takt som header bilden, så att den får lika långt på lika lång tid att slidea / S
     left:0;
     right: 0;
-    transition: 0.5s;
+    transition-duration: $transition-time;
     
     
 
@@ -28,6 +28,7 @@
         box-sizing: border-box;
         background-color: white;
         border: 0.1px solid $line-color;
+        
 
         #vendor-list-header {
   

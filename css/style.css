@@ -21,13 +21,10 @@ body {
   overflow: hidden;
   margin: 0; }
 
-.section-content {
-  visibility: hidden; }
-
 #header-img {
   position: absolute;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   top: 0;
   left: 0;
   margin: 0;
@@ -38,8 +35,8 @@ body {
 
 .topnav {
   font-family: "Montserrat", "Sans Serif";
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   position: fixed;
   width: 100%;
   top: 0;
@@ -84,12 +81,37 @@ body {
 
   .topnav ul li a {
     display: inline-block; } }
+#content-wrapper {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  width: 100vw;
+  padding: 4em;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  left: 0;
+  visibility: hidden; }
+
+#content-collection {
+  visibility: inherit; }
+
+#content-products {
+  visibility: visible;
+  height: inherit;
+  background-color: inherit; }
+
+#content-about {
+  visibility: hidden; }
+
+#content-vendors {
+  visibility: hidden; }
+
 .map iframe {
   border: 0;
   width: 100%;
   height: calc(100vh);
   position: absolute;
-  top: 4em;
+  top: inherit;
   left: 0;
   z-index: -9; }
 
@@ -97,11 +119,11 @@ body {
   display: block;
   position: absolute;
   height: auto;
-  top: calc(100vh - 80px);
+  top: calc(200vh - 80px);
   left: 0;
   right: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
   #vendor-list-wrapper #vendor-list-content {
     margin: 0 auto;
     position: relative;

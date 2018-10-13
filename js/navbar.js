@@ -38,6 +38,7 @@ function changeNav(event) {
     console.log(event.target.id);
     topNav.style.backgroundColor = "white";
     removeHeaderImg();
+    
 }
 
 
@@ -46,4 +47,15 @@ function removeHeaderImg(){
     var headerImg = document.querySelector("#header-img");
     console.log(headerImg);
     headerImg.style.top = "-100vh";
+
+
+    //det här ska ju egentligen vara content-wrappern som flyttar sig. inget annat
+    var contentwrapper = document.querySelector("#content-wrapper");
+    var vendorListWrapper = document.querySelector("#vendor-list-wrapper"); //den här för att den är absolute
+    contentwrapper.style.top = "0px";
+    vendorListWrapper.style.top = "calc(100vh - 80px)";
+
+  
 }
+
+ //ta bort när du redigerat färdigt contentsidorsna
