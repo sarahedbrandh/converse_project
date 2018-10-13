@@ -1,5 +1,6 @@
 .topnav {
-    background-color: rgba(0, 0, 0, 0.5);
+    font-family: $header-font;
+    transition: 0.3s;
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,7 +18,8 @@
   }
   
   .topnav ul li a {
-    color: rgba(255, 255, 255, 1);
+    color: $dark-color;
+    font-weight: lighter;
     padding: 1em;
     text-decoration: none;
     display: none;
