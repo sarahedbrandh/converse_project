@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 h1, h2, h3, h4, h5, h6 {
-  color: "#151515";
+  color: #151515;
   text-transform: uppercase;
   font-family: "Montserrat", "Sans Serif";
   font-weight: lighter; }
 
 p {
-  color: "#151515";
+  color: #151515;
   font-size: 1em;
   font-family: "Times New Roman", "Serif"; }
 
@@ -32,7 +32,9 @@ body {
   background-size: cover; }
 
 .topnav {
-  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", "Sans Serif";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   position: fixed;
   width: 100%;
   top: 0;
@@ -48,7 +50,8 @@ body {
   display: inline; }
 
 .topnav ul li a {
-  color: white;
+  color: #151515;
+  font-weight: lighter;
   padding: 1em;
   text-decoration: none;
   display: none;
