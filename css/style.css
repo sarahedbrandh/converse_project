@@ -19,7 +19,8 @@ img {
 
 body {
   overflow: hidden;
-  margin: 0; }
+  margin: 0;
+  width: 100vw; }
 
 #header-img {
   position: absolute;
@@ -84,21 +85,17 @@ body {
 #content-wrapper {
   position: absolute;
   top: 100vh;
-  height: 100vh;
-  width: 100vw;
-  padding: 4em;
+  height: 95vh;
+  z-index: -1;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  left: 0;
-  visibility: hidden; }
+  left: 0; }
 
 #content-collection {
-  visibility: inherit; }
+  visibility: hidden; }
 
-#content-products {
-  visibility: visible;
-  height: inherit;
-  background-color: inherit; }
+#content-contact {
+  visibility: hidden; }
 
 #content-about {
   visibility: hidden; }
@@ -106,6 +103,21 @@ body {
 #content-vendors {
   visibility: hidden; }
 
+#content-contact {
+  visibility: hidden; }
+
+#content-products {
+  visibility: visible;
+  height: inherit;
+  background-color: inherit;
+  overflow: scroll;
+  display: grid; }
+  #content-products .product-text {
+    padding: 2em 4em; }
+
+@media screen and (min-width: 600px) {
+  #content-products {
+    grid-template-columns: repeat(2, 1fr); } }
 .map iframe {
   border: 0;
   width: 100%;

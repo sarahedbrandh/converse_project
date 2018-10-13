@@ -1,0 +1,21 @@
+#content-products{
+    visibility: visible;
+    height: inherit;
+    background-color: inherit;
+    overflow: scroll;
+    
+    display: grid;
+    
+
+    .product-text {
+        padding: 2em 4em;
+    }
+    
+}
+
+@media screen and (min-width: 600px){
+    #content-products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}

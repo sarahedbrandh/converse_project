@@ -1,24 +1,21 @@
 #content-wrapper{
     position: absolute;
     top: 100vh;
-    height: 100vh;
-    width: 100vw;
-    padding: 4em;
+    height: 95vh;
+    z-index: -1;
+    
     transition-duration: $transition-time;
     left: 0;
-    visibility: hidden;
+  
+
 }
     #content-collection{
-        visibility: inherit;
+        visibility: hidden;
     }
     #content-contact{
+        visibility: hidden;
     }
-    #content-products{
-        visibility: visible;
-        height: inherit;
-        background-color: inherit;
-        
-    }
+ 
     #content-about{
         visibility: hidden;
     }
@@ -26,5 +23,7 @@
         visibility: hidden;
        
     }
-    #content-contact{}
-    #content-icon{}
+    #content-contact{
+        visibility: hidden;
+    }
+    
