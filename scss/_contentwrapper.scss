@@ -1,3 +1,21 @@
-.section-content {
-    //visibility: hidden;
+#content-wrapper{
+    position: absolute;
+    top: 100vh;
+    height: 95vh;
+    z-index: -1; //för att komma under menyn
+    
+    transition-duration: $transition-time;
+    left: 0;
+  
+
 }
+   
+  
+ 
+    
+       
+       
+       
+   
+    
+    

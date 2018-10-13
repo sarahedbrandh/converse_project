@@ -1,0 +1,20 @@
+#content-products:not(.hidden){
+    display: grid;
+    height: 100vh;
+    background-color: inherit;
+    overflow: scroll;
+    
+    
+
+    .product-text {
+        padding: 2em 4em;
+    }
+    
+}
+
+@media screen and (min-width: 600px){
+    #content-products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
