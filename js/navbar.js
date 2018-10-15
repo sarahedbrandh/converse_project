@@ -31,9 +31,10 @@ var menuItems = document.querySelectorAll(".menu-items");
 menuItems.forEach(function(item){
     console.log(item.id);
     if (item.id != "menu-icon"){
+        if (item.id != "contact"){
         item.addEventListener('click', changeNav, false);
-    console.log(item);
-    item.addEventListener('click', changeContent, false);
+        item.addEventListener('click', changeContent, false);
+        }
     }
     
 });

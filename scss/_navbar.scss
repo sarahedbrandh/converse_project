@@ -54,7 +54,7 @@
   
 
   
-  .topnav ul li:first-child > a{
+  #converse-logo-item a{
     display: inline-block;
   }
   
@@ -84,9 +84,7 @@
     transition: 0.4s;
     padding: auto 0;
     width: 50px;
-    &:hover {
-      width: 70px;
-    }
+    
   }
   #menu-logo {
     width: 2em;
