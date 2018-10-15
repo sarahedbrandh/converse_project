@@ -12,6 +12,15 @@ p {
     
 }
 
+a {
+    text-transform: uppercase;
+    color: $dark-color;
+    font-weight: lighter;
+    text-decoration: none;
+       
+    font-size: 1.2em;
+}
+
 i {
     font-weight: lighter;
 }

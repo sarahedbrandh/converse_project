@@ -15,17 +15,11 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    #converse-logo-item{
-      position: absolute;
-      left: 0;
-      top: 0;
-      margin: 0;
-      padding: 0;
-      a{
-        padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+      div {
+        margin: auto 0;
       }
-    }
-    
     
 
     li {
@@ -33,12 +27,9 @@
     
 
       a {
-        color: $dark-color;
-        font-weight: lighter;
+        
         padding: 1em;
-        text-decoration: none;
-        display: none;
-        font-size: 1.5em;
+        
       }:hover {
         font-weight: bold;
       }
@@ -59,20 +50,37 @@
   }
   
   #menu-icon {
-    float: right;
-    display:block;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   
-  .topnav.dropped ul li a {
-    display: block;
-    top: 4em;
+  .topnav.dropped ul{
+    float:left;
+    display: inline;
+    li a {
+      display: block;
+      top: 4em;
+    }
   }
-
 
   
-  #converse-logo {
-    width: 50px;
+
+
+  #converse-logo-item{
+    a {
+      margin: 0;
+    padding: 0.5em;
+    }
+    #converse-logo {
+      width: 50px;
+      transition: $transition-time;
+      &:hover {
+        width: 70px;
+      }
+    } 
   }
+ 
   #menu-logo {
     width: 2em;
     margin: 0;
@@ -87,7 +95,7 @@
     
     .topnav ul {
       background-color: rgba(255, 255, 255, 0);
-      float: right;
+      
       li a {
         display: inline-block;
     }
