@@ -9,6 +9,7 @@
     
     vertical-align: middle;
     //height: $navbar-height;
+    box-shadow: 1em;
   }
   
   .topnav ul {
@@ -34,7 +35,7 @@
       a {
         color: $dark-color;
         font-weight: 400;
-        padding: 1em;
+        padding: 1.5em;
         text-decoration: none;
         
         display: none;
@@ -78,7 +79,12 @@
 
   
   #converse-logo {
+    transition: 0.4s;
+    padding: auto 0;
     width: 50px;
+    &:hover {
+      width: 70px;
+    }
   }
   #menu-logo {
     width: 2em;

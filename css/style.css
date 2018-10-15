@@ -77,7 +77,9 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-box-shadow: 1em;
+          box-shadow: 1em; }
 
 .topnav ul {
   list-style: none;
@@ -94,7 +96,7 @@ body {
     .topnav ul li a {
       color: #151515;
       font-weight: 400;
-      padding: 1em;
+      padding: 1.5em;
       text-decoration: none;
       display: none;
       font-size: 1em; }
@@ -120,7 +122,12 @@ body {
     top: 4em; }
 
 #converse-logo {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: auto 0;
   width: 50px; }
+  #converse-logo:hover {
+    width: 70px; }
 
 #menu-logo {
   width: 2em;
