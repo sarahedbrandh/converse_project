@@ -10,12 +10,13 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 100; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 0em; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
+
     height: 100%; /* Full height */
     max-height: 100vh;
+    max-width: 100vh;
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(224, 224, 224); /* Fallback color */
     background-color: rgba(219, 219, 219, 0.4); /* Black w/ opacity */
@@ -31,15 +32,17 @@
 .modal-content {
     background-color: #ffffff;
     margin: auto;
-    padding: 20px;
+    padding: 2em;
     border: 2px solid rgb(117, 117, 117);
-    width: 50%;
+    
+    height: 100vh;
 }
 
 /* The Close Button */
 .close {
     color: #636363;
     float: right;
+    margin-right: 0.3em;
     font-size: 28px;
     font-weight: bold;
 }
@@ -64,9 +67,7 @@
 
 
     /* ========= FORM ========== */
-.name {
-    display: block;
-}
+
 
 input[type=text], select, textarea {
     width: 70%;
@@ -77,6 +78,7 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    display: block;
 }
 
 input[type=submit] {
@@ -103,19 +105,30 @@ input[type=submit]:hover {
         /* ====== GRID CONTAINER ====== */
 
 .grid-container-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: block;
 }
 
 
 
     @media screen and (min-width: 700px) {
-
+        .modal {
+            padding-top: 2em; /* Location of the box */
+            left: 0;
+            top: 0;
+        
+            height: 100vh; /* Full height */
+            width: 100vw;
+            max-height: 100vh;
+            max-width: 100vh;
+        }
         .modal-content {
             margin: auto;
-            padding: 20px;
-            width: 100%;
+            padding: 2em;
+            width: 50vw;
+            height: 50vh;
         }
+
+        
 
     }
 
