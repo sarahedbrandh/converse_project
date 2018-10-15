@@ -42,6 +42,10 @@ function changeNav(event) {
     var topNav = document.querySelector(".topnav");
     console.log(event.target.id);
     topNav.style.backgroundColor = "white";
+    //for all menu items change color to black
+    menuItems.forEach(function(item){
+        item.style.color = "black";
+    })
     removeHeaderImg();
     var topNav = document.querySelector("#myTopnav");
     topNav.classList.remove("dropped");

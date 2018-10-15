@@ -82,7 +82,8 @@ body {
 .topnav ul {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background-color: white; }
   .topnav ul #converse-logo-item {
     margin: 0;
     padding: 0; }
@@ -112,9 +113,11 @@ body {
   right: 0;
   display: block; }
 
-.topnav.dropped ul li a {
-  display: block;
-  top: 4em; }
+.topnav.dropped ul {
+  background-color: white; }
+  .topnav.dropped ul li a {
+    display: block;
+    top: 4em; }
 
 #converse-logo {
   width: 50px; }
@@ -136,7 +139,8 @@ body {
     background-color: rgba(255, 255, 255, 0);
     float: right; }
     .topnav ul li a {
-      display: inline-block; } }
+      display: inline-block;
+      color: #ffffff; } }
 #content-wrapper {
   position: absolute;
   top: 100vh;
