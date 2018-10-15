@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <script src="js/navbar.js" defer></script>
     <script src="js/collection.js" defer></script>
     <script src="js/contact.js" defer></script>
@@ -12,83 +15,256 @@
 
     <title>Converse</title>
 </head>
+
 <body>
     <header>
-
+            <div id="header-img"><img src="media/images/converse-logotype.png" alt="Converse logotype" id="logotype"></div>
+              
+         <!-- TODO: pil neråt för att komma vidare ner, logga på bilden, jS koden görs i navbar.js-->
         <nav class="topnav" id="myTopnav">
+            
             <ul>
-                <li><a class="menu-items" href="index.html">Collection</a></li>
-                <li><a class="menu-items"href="#content-about">About</a></li>
-                <li><a class="menu-items"href="#">Products</a></li>
-                <li><a class="menu-items"href="#">Vendors</a></li>
-                <li><a id="menuClick" class="menu-items"href="#content-contact">Contact</a></li>
-                <li><a class="menu-items"href="javascript:void(0);" id="menu-icon" onclick="navToggle()">MENU</a></li>   
+                <div>
+                        <li id="converse-logo-item"><a href="/index.html"><img src="media/logo/logo.png" id="converse-logo" alt="converse logo"></a></li>
+                
+                </div>
+                <div>
+                        <li><a class="menu-items" id="menu-icon" href="javascript:void(0);" onclick="navToggle()"><i class="fas fa-bars"></i></a></li>
+                   
+                        <li><a class="menu-items" id="collection" href="#">Collection</a></li>
+                        <li><a class="menu-items" id="about" href="#">About</a></li>
+                        <li><a class="menu-items" id="products" href="#">Products</a></li>
+                        <li><a class="menu-items" id="vendors" href="#">Vendors</a></li>
+                        <li><a class="menu-items" id="menuClick" href="#">Contact</a></li>
+                </div>
+                    
+               
+           
+                
             </ul>
         </nav>
-        <div id="header-img">Header: background image plus logo</div>
+
     </header>
     <script>
-        
-       
-         
+
+
+
     </script>
 
     <main>
+        
         <div id="content-wrapper">
        
-                <div class="section-content" id="content-collection">collection</div>
-                <div /*class="section-content"*/ id="content-about">about</div>
-                <div class="section-content" id="content-products">products</div>
-                <div class="section-content" id="content-vendors">vendor</div>
-                <div /*class="section-content"*/ id="content-contact">
+            
+                
 
+
+
+            <div class="section-content hidden" id="content-collection">collection</div>
+            <div class="section-content hidden" id="content-about">
+                    <div id="about-us-text">
+                        <h2>About converse</h2>
+                        <p>In some ways, you know us. Converse has been making Chuck Taylor All Star and One Star sneakers since we started over a century ago, and now we work to make new street style classics. What you wear defines sport, street, and creative culture, and we’ve been redefining it with you all along. When you wear Converse products, you create a culture of authentic street style simply by being yourself. Whether they’re on the feet of a ‘70’s basketball star in a history book or on the street with you today, Chucks have always signified cool...because you wear them. We don’t know where you’ll go, but we know you’ll take Converse to the future with you.</p>
+                        <h2>What we do</h2>
+                        <p>Converse believes that unleashing the creative spirit can change the world. We strive to make a positive impact in the communities in which we live and work. We empower our community partners to unleash their creative spirit through Music, Art and Skate, with a focus on inspiring and enabling young people to be their true authentic selves. We aim to connect, be useful and be a company that cares.Converse has chosen to partner with key organisations in the Amsterdam area, our EMEA Headquarters’ backyard.As our company grows, we will continue to develop our community efforts and aim to broaden our scope of impact.</p>
+                        <h2>What we don't do</h2>
+                            <p>To maintain focus and achieve greater impact through corporate         giving,Converse does not provide charitable support for:
+                                <br>
+                                <br><i class="fas fa-caret-right"></i>&emsp;Individuals (scholarships, stipends, fellowships, personal assistance, fundraising).
+
+                                <br><i class="fas fa-caret-right"></i>&emsp;For-profit ventures.
+
+                                <br><i class="fas fa-caret-right"></i>&emsp;Religious groups for religious purposes.
+
+                                <br><i class="fas fa-caret-right"></i>&emsp;Capital campaigns, endowment funds or memorials.
+
+                                <br><i class="fas fa-caret-right"></i>&emsp;Individual study, research or travel grants.
+
+                                <br><i class="fas fa-caret-right"></i>&emsp;Unsolicited auction product, table sponsorships or cash proposals.<br> <br>
+                                
+                                Converse does not accept hard copy donation requests, emailed donation requests or unsolicited cash donation proposals. Converse proactively seeks partnerships to support and endorse the brand. Unsolicited Converse sponsorships of individuals or events are not accepted.
+                            </p>
+                    </div><!-- /#about-us-text-->
+                    <img src="media/images/aboutUsSneakers.jpg" alt="Image of converse shoes">
                     
+                </div>
+            <div class="section-content hidden" id="content-products">
+                
+                    <div class="product" id="product1">
+                        <img src="media/images/converse-product1.jpg" alt="image of product one">
+                        <div class="product-text">
+                            <h2>Forever Chuck</h2>
+                            <p>
+                               The Classic converse, an ageless design with a modern touch. now redefined.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product" id="product2">
+                        
+                            <img src="media/images/converse-product2.jpg" alt="image of product one">
+                            <div class="product-text">
+                                <h2>Coffee Edittion</h2>
+                                <p>Your favorite shoe now combined with your drink of choice. For all thosemoments you need a caffeine boost all the way from your feet.  
+                                </p>
+                            </div>
+                    </div>
+                    <div class="product" id="product3">
+                        <img src="media/images/converse-product3.jpg" alt="image of product one">
+                        <div class="product-text">
+                            <h2>Tougher Edition</h2>
+                            <p>Your favorite now available in a tougher edition. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product" id="product4">
+                        <img src="media/images/converse-product4.jpg" alt="image of product one">
+                        <div class="product-text">
+                            <h2>Pride Edition</h2>
+                            <p>For all your proud pride moments.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product" id="product5">
+                        <img src="media/images/converse-product5.jpg" alt="image of product one">
+                        <div class="product-text">
+                            <h2>Hipster Edition</h2>
+                            <p>For all those moments you feel that the 'Allstar' is too outdated. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product" id="product6">
+                            <img src="media/images/converse-product6.jpg" alt="image of product one">
+                            <div class="product-text">
+                                <h2>Baby Edition</h2>
+                                <p>For all those tiny, small, soft baby feet.
+                                </p>
+                            </div>
+                        </div>
+                </div>
 
-                    <!-- Trigger/Open The Modal -->
+            
+            <div class="section-content hidden" id="content-vendors">
+                <div class="map">
+                    <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw"
+                        allowfullscreen="">Karta</iframe>
+                </div><!-- / google map-->
+                <div id="vendor-list-wrapper">
+                    <div id="vendor-list-content">
+                        <div id="vendor-list-header" class="hidden-list">
+                            <h2 id="vendor-list-title">View List</h2>
+                            <i class="fas fa-angle-up"></i>
+
+                        </div>
+
+                        <div id="vendor-list-vendors">
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+                            <div class="vendor-item">
+                                <strong>Affären</strong>
+                                <p>TEstvägen</p>
+                                <p>0723622049</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!-- / Vendor-list-wrapper -->
+            </div>
+
+
+<!-- CONTACT -->
+
+
+            <div class="section-content hidden" id="content-contact">
+                                   <!-- Trigger/Open The Modal -->
                     <!--- <button id="myBtn">Open Modal</button> -->
                     
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                     
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <div class="grid-container-form">
-                                <div class="grid-item-form">
-                                    <p>For more information, please send an email or contact us by phone.</p>
-                                    <h3>CONVERSE</h3>
-                                    <p>+45(0)4 38 93 29 83 <br> info@converse.com</p>
-                                </div>
-                            
-                                <div class="grid-item-form">
-                                    <div class="container">
-
-                                        <div class="form-about">
-                                            <form action="mailto:gatusoparen@live.se" method="post" enctype="text/plain">
-                                                <label for="name">Name</label>
-                                                <input type="text" id="name" name="name" placeholder="Write your name here">
-                                                <label for="email">Your email</label>
-                                                <input type="text" id="email" name="email" placeholder="Write your email here">
-                                                <label for="question">Your message</label>
-                                                <input type="text" id="question" name="question" class="question-form" placeholder="Write your message here">
-                                                <input type="submit" name="submit" id="submit" class="form-button" value="submit">
-                                            </form>
-                                        </div>    
-
-                                    </div> <!--/container -->
-                                </div> <!--/grid-item-form -->
-                            </div> <!--/grid-container-form -->
-                        </div> <!-- /model-contact -->
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="grid-container-form">
+                                    <div class="grid-item-form">
+                                        <p>For more information, please send an email or contact us by phone.</p>
+                                        <h3>CONVERSE</h3>
+                                        <p>+45(0)4 38 93 29 83 <br> info@converse.com</p>
+                                    </div>
+                                
+                                    <div class="grid-item-form">
+                                        <div class="container">
+    
+                                            <div class="form-about">
+                                                <form action="mailto:gatusoparen@live.se" method="post" enctype="text/plain">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" id="name" name="name" placeholder="Write your name here">
+                                                    <label for="email">Your email</label>
+                                                    <input type="text" id="email" name="email" placeholder="Write your email here">
+                                                    <label for="question">Your message</label>
+                                                    <input type="text" id="question" name="question" class="question-form" placeholder="Write your message here">
+                                                    <input type="submit" name="submit" id="submit" class="form-button" value="submit">
+                                                </form>
+                                            </div>    
+    
+                                        </div> <!--/container -->
+                                    </div> <!--/grid-item-form -->
+                                </div> <!--/grid-container-form -->
+                            </div> <!-- /model-contact -->
+                        
+    
+    
+                        </div> <!--/modal -->
                     
+                    </div> <!--/content-contact -->
+            </div>
 
-
-                    </div> <!--/modal -->
-                
-                </div> <!--/content-contact -->
-
+        </div>
 
         </div> <!-- /content-wrapper -->
     </main>
-
 </body>
+
 </html>

@@ -1,14 +1,38 @@
 h1, h2, h3, h4, h5, h6 {
     color: $dark-color;
     text-transform: uppercase;
+    font-family: $header-font;
+    font-weight: lighter;
 }
 
 p {
     color: $dark-color;
     font-size: 1em;
+    font-family: $text-font;
+    
+}
+
+i {
+    font-weight: lighter;
+}
+
+a {
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 img {
     width: 100%;
     height: auto;
 }
+
+body {
+    overflow: hidden;
+    margin: 0;
+    width: 100vw;
+}
+
+.hidden {
+    display: none;
+}
+
