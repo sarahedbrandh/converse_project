@@ -9,12 +9,16 @@
     
     vertical-align: middle;
     //height: $navbar-height;
+
+    
+    box-shadow: 0 1px 1px -1px #999;
   }
   
   .topnav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: white;
     #converse-logo-item{
       
       margin: 0;
@@ -33,7 +37,7 @@
       a {
         color: $dark-color;
         font-weight: 400;
-        padding: 1em;
+        padding: 1.5em;
         text-decoration: none;
         
         display: none;
@@ -50,7 +54,7 @@
   
 
   
-  .topnav ul li:first-child > a{
+  #converse-logo-item a{
     display: inline-block;
   }
   
@@ -65,15 +69,22 @@
     display:block;
   }
   
-  .topnav.dropped ul li a {
-    display: block;
-    top: 4em;
+  .topnav.dropped ul{
+    background-color: white;
+    li a {
+      display: block;
+      top: 4em;
+    }
   }
+
 
 
   
   #converse-logo {
+    transition: 0.4s;
+    padding: auto 0;
     width: 50px;
+    
   }
   #menu-logo {
     width: 2em;
@@ -95,8 +106,10 @@
     .topnav ul {
       background-color: rgba(255, 255, 255, 0);
       float: right;
+      
       li a {
         display: inline-block;
+        color: $superlight-color;
     }
     }
       

@@ -14,8 +14,7 @@ i {
   font-weight: lighter; }
 
 a {
-  text-transform: uppercase;
-  font-size: 13px; }
+  text-transform: uppercase; }
 
 img {
   width: 100%;
@@ -64,7 +63,7 @@ body {
 
   #logotype {
     max-width: 100vw;
-    width: 30vw;
+    width: 20vw;
     margin-top: 50vh;
     margin-left: 15vw;
     -webkit-transform: translateY(-50%);
@@ -77,12 +76,15 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-box-shadow: 0 1px 1px -1px #999;
+          box-shadow: 0 1px 1px -1px #999; }
 
 .topnav ul {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background-color: white; }
   .topnav ul #converse-logo-item {
     margin: 0;
     padding: 0; }
@@ -93,14 +95,14 @@ body {
     .topnav ul li a {
       color: #151515;
       font-weight: 400;
-      padding: 1em;
+      padding: 1.5em;
       text-decoration: none;
       display: none;
       font-size: 1em; }
     .topnav ul li :hover {
       font-weight: bold; }
 
-.topnav ul li:first-child > a {
+#converse-logo-item a {
   display: inline-block; }
 
 .material-icons {
@@ -112,11 +114,16 @@ body {
   right: 0;
   display: block; }
 
-.topnav.dropped ul li a {
-  display: block;
-  top: 4em; }
+.topnav.dropped ul {
+  background-color: white; }
+  .topnav.dropped ul li a {
+    display: block;
+    top: 4em; }
 
 #converse-logo {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: auto 0;
   width: 50px; }
 
 #menu-logo {
@@ -136,7 +143,8 @@ body {
     background-color: rgba(255, 255, 255, 0);
     float: right; }
     .topnav ul li a {
-      display: inline-block; } }
+      display: inline-block;
+      color: #ffffff; } }
 #content-wrapper {
   position: absolute;
   top: 100vh;
@@ -229,6 +237,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden; }
     #content-about:not(.hidden) #about-us-text {
+      height: 70vh;
+      overflow: scroll;
       padding: 8em; } }
 #content-contact {
   display: block;

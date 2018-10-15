@@ -31,9 +31,10 @@ var menuItems = document.querySelectorAll(".menu-items");
 menuItems.forEach(function(item){
     console.log(item.id);
     if (item.id != "menu-icon"){
+        if (item.id != "contact"){
         item.addEventListener('click', changeNav, false);
-    console.log(item);
-    item.addEventListener('click', changeContent, false);
+        item.addEventListener('click', changeContent, false);
+        }
     }
     
 });
@@ -42,6 +43,10 @@ function changeNav(event) {
     var topNav = document.querySelector(".topnav");
     console.log(event.target.id);
     topNav.style.backgroundColor = "white";
+    //for all menu items change color to black
+    menuItems.forEach(function(item){
+        item.style.color = "black";
+    })
     removeHeaderImg();
     var topNav = document.querySelector("#myTopnav");
     topNav.classList.remove("dropped");
