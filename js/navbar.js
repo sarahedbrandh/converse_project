@@ -1,9 +1,9 @@
 function navToggle() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-        x.className += " dropped";
+        x.classList.add("dropped");
     } else {
-        x.className = "topnav";
+        x.classList.remove("dropped");
     }
 }
 
@@ -43,6 +43,9 @@ function changeNav(event) {
     console.log(event.target.id);
     topNav.style.backgroundColor = "white";
     removeHeaderImg();
+    var topNav = document.querySelector("#myTopnav");
+    topNav.classList.remove("dropped");
+    //remove classList dropped to #MyTopNav
     
 }
 
