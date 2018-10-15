@@ -34,11 +34,13 @@
 
       a {
         color: $dark-color;
-        font-weight: lighter;
+        font-weight: 400;
         padding: 1em;
         text-decoration: none;
+        
         display: none;
-        font-size: 1.5em;
+        font-size: 1em;
+
       }:hover {
         font-weight: bold;
       }
