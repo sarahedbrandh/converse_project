@@ -1,4 +1,5 @@
 
+
 #content-contact {
     display: block;
     max-height: 100vh;
@@ -16,26 +17,28 @@
     height: 100%; /* Full height */
     max-height: 100vh;
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(204, 204, 204); /* Fallback color */
-    background-color: rgba(228, 228, 228, 0.4); /* Black w/ opacity */
+    background-color: rgb(224, 224, 224); /* Fallback color */
+    background-color: rgba(219, 219, 219, 0.4); /* Black w/ opacity */
         -webkit-animation-name: fadeIn; /* Fade in the background */
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s
 }
 
+/*
+
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #ffffff;
     margin: auto;
     padding: 20px;
-    border: 2px solid #888;
+    border: 2px solid rgb(117, 117, 117);
     width: 50%;
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: #636363;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -61,12 +64,14 @@
 
 
     /* ========= FORM ========== */
+.name {
+    display: block;
+}
 
-    
 input[type=text], select, textarea {
-    width: 100%;
+    width: 70%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -75,16 +80,17 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: rgb(218, 218, 218);
-    color: white;
+    background-color: #66d0d0 ;
+    color: rgb(0, 0, 0);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: block;
 }
 
 input[type=submit]:hover {
-    background-color: #777777;
+    background-color:  #2d9e9e;
 }
 
 .container {
@@ -92,3 +98,25 @@ input[type=submit]:hover {
     background-color: #ffffff;
     padding: 20px;
 }
+
+
+        /* ====== GRID CONTAINER ====== */
+
+.grid-container-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+    @media screen and (min-width: 700px) {
+
+        .modal-content {
+            margin: auto;
+            padding: 20px;
+            width: 100%;
+        }
+
+    }
+
+

@@ -50,34 +50,41 @@
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
                     
-                      <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p>For more information, please send an email or contact us by phone.</p>
-                        <h3>CONVERSE</h3>
-                        <p>+45(0)4 38 93 29 83 <br> info@converse.com</p>
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="grid-container-form">
+                                <div class="grid-item-form">
+                                    <p>For more information, please send an email or contact us by phone.</p>
+                                    <h3>CONVERSE</h3>
+                                    <p>+45(0)4 38 93 29 83 <br> info@converse.com</p>
+                                </div>
+                            
+                                <div class="grid-item-form">
+                                    <div class="container">
 
-                        <div class="container">
-                        <form action="/action_page.php">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                        <div class="form-about">
+                                            <form action="mailto:gatusoparen@live.se" method="post" enctype="text/plain">
+                                                <label for="name">Name</label>
+                                                <input type="text" id="name" name="name" placeholder="Write your name here">
+                                                <label for="email">Your email</label>
+                                                <input type="text" id="email" name="email" placeholder="Write your email here">
+                                                <label for="question">Your message</label>
+                                                <input type="text" id="question" name="question" class="question-form" placeholder="Write your message here">
+                                                <input type="submit" name="submit" id="submit" class="form-button" value="submit">
+                                            </form>
+                                        </div>    
 
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-
-
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                            <input type="submit" value="Submit">
-                        </form>
-                        </div>
-                    </div> <!-- /model-contact -->
+                                    </div> <!--/container -->
+                                </div> <!--/grid-item-form -->
+                            </div> <!--/grid-container-form -->
+                        </div> <!-- /model-contact -->
                     
-                    </div>
+
+
+                    </div> <!--/modal -->
                 
-                </div>
+                </div> <!--/content-contact -->
 
 
         </div> <!-- /content-wrapper -->
