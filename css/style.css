@@ -233,4 +233,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden; }
     #content-about:not(.hidden) #about-us-text {
+      height: 70vh;
+      overflow: scroll;
       padding: 8em; } }

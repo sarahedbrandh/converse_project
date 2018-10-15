@@ -13,6 +13,8 @@
         grid-template-columns: repeat($columnAbout, 1fr);
         overflow: hidden;
         #about-us-text{
+            height: 70vh;
+            overflow: scroll;
             padding: 8em; //varför stryker den denna?
         }
         
