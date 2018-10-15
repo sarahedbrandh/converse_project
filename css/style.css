@@ -78,8 +78,8 @@ body {
   top: 0;
   left: 0;
   vertical-align: middle;
-  -webkit-box-shadow: 1em;
-          box-shadow: 1em; }
+  -webkit-box-shadow: 0 1px 1px -1px #999;
+          box-shadow: 0 1px 1px -1px #999; }
 
 .topnav ul {
   list-style: none;
