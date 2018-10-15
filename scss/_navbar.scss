@@ -9,10 +9,17 @@
     
     vertical-align: middle;
     //height: $navbar-height;
-
     
+  
+    
+    
+  }
+  .topnav.clicked {
     box-shadow: 0 1px 1px -1px #999;
   }
+
+  
+
   
   .topnav ul {
     list-style: none;

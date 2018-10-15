@@ -42,7 +42,9 @@ menuItems.forEach(function(item){
 
 function changeNav(event) {
     var topNav = document.querySelector(".topnav");
-    console.log(event.target.id);
+    topNav.classList.add("clicked");
+    console.log("classList" + topNav.classList);
+    
     topNav.style.backgroundColor = "white";
     //for all menu items change color to black
     menuItems.forEach(function(item){

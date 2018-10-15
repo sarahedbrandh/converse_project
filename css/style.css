@@ -76,7 +76,9 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  vertical-align: middle;
+  vertical-align: middle; }
+
+.topnav.clicked {
   -webkit-box-shadow: 0 1px 1px -1px #999;
           box-shadow: 0 1px 1px -1px #999; }
 
