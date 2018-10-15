@@ -1,9 +1,9 @@
 function navToggle() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-        x.className += " dropped";
+        x.classList.add("dropped");
     } else {
-        x.className = "topnav";
+        x.classList.remove("dropped");
     }
 }
 
@@ -29,9 +29,13 @@ function navToggle() {
 var menuItems = document.querySelectorAll(".menu-items");
 
 menuItems.forEach(function(item){
-    item.addEventListener('click', changeNav, false);
+    console.log(item.id);
+    if (item.id != "menu-icon"){
+        item.addEventListener('click', changeNav, false);
     console.log(item);
     item.addEventListener('click', changeContent, false);
+    }
+    
 });
 
 function changeNav(event) {
@@ -39,6 +43,9 @@ function changeNav(event) {
     console.log(event.target.id);
     topNav.style.backgroundColor = "white";
     removeHeaderImg();
+    var topNav = document.querySelector("#myTopnav");
+    topNav.classList.remove("dropped");
+    //remove classList dropped to #MyTopNav
     
 }
 
@@ -63,7 +70,7 @@ function removeHeaderImg(){
     headerImg.style.top = "-100vh";
 
 
-    //det här ska ju egentligen vara content-wrappern som flyttar sig. inget annat
+    
     var contentwrapper = document.querySelector("#content-wrapper");
     var vendorListWrapper = document.querySelector("#vendor-list-wrapper"); //den här för att den är absolute
     contentwrapper.style.top = "0px";
@@ -72,4 +79,4 @@ function removeHeaderImg(){
   
 }
 
- //ta bort när du redigerat färdigt contentsidorsna
+
