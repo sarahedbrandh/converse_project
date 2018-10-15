@@ -1,6 +1,6 @@
 function navToggle() {
     var x = document.getElementById("myTopnav");
-    if (x.classList.contains("topnav")) {
+    if (!x.classList.contains("dropped")) {
         x.classList.add("dropped");
     } else {
         x.classList.remove("dropped");
@@ -12,7 +12,7 @@ function navToggle() {
 
 
 
-// ===============  Changing the navbar-background to white when clicking ============== S//
+// ===============  Changing the navbar-background to white when clicking ============== Sara//
 
 var menuItems = document.querySelectorAll(".menu-items");
 
@@ -68,7 +68,7 @@ function removeHeaderImg(){
 
     
     var contentwrapper = document.querySelector("#content-wrapper");
-    var vendorListWrapper = document.querySelector("#vendor-list-wrapper"); //den här för att den är absolute
+    var vendorListWrapper = document.querySelector("#vendor-list-wrapper"); 
     contentwrapper.style.top = "0px";
     vendorListWrapper.style.top = "calc(100vh - 80px)";
 
