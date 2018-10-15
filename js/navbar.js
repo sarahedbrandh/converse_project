@@ -11,12 +11,11 @@ function navToggle() {
 //                       -> visa innehåll för aktuell .section-content #content-?   (showContent(event))
 
     var menuItems = document.querySelectorAll('.menu-items');
-    console.log(menuItems);
     menuItems.forEach(function(item){
-        console.log("testin");
+        
+        
     });
-    console.log('test');
-
+    
 
 
 
@@ -27,12 +26,12 @@ function navToggle() {
 // steg 3 Dölj nuvarande sektion 
 
 function menuClick(EventTarget){
-    document.querySelectorAll('.section-content').forEach(function(content) {
-        content.style.visibility = "hidden" ;
+    document.querySelectorAll('.section-content'). 
+        content.style.visibility = "hidden" ;addEventListener('click' () => {
+        console.log('pressed');
+        
+        })
 
-        }
-        )
-}
 
 
 
