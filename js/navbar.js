@@ -1,6 +1,6 @@
 function navToggle() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+    if (!x.classList.contains("dropped")) {
         x.classList.add("dropped");
     } else {
         x.classList.remove("dropped");
@@ -9,22 +9,10 @@ function navToggle() {
 
 
 
-//
-//TODO: menuClick(event) -> dölja alla sectioner .section-content  (hideContent())
-//                       -> visa innehåll för aktuell .section-content #content-?   (showContent(event))
-
-//TODO: hideContent()         hämta alla divar och sätt dem till hidden
-//TODO: showContent(event)    visability: visable  hämta div med motsvarande id och gör den visable
-
-//TODO: enlargeLogo() när man hovrar över logan så ska loggan bli större
-
-
-//TODO: make background <-> transparent white when click on navbar
 
 
 
-
-// ===============  Changing the navbar-background to white when clicking ============== S//
+// ===============  Changing the navbar-background to white when clicking ============== Sara//
 
 var menuItems = document.querySelectorAll(".menu-items");
 
@@ -42,7 +30,9 @@ menuItems.forEach(function(item){
 
 function changeNav(event) {
     var topNav = document.querySelector(".topnav");
-    console.log(event.target.id);
+    topNav.classList.add("clicked");
+    console.log("classList" + topNav.classList);
+    
     topNav.style.backgroundColor = "white";
     //for all menu items change color to black
     menuItems.forEach(function(item){
@@ -78,7 +68,7 @@ function removeHeaderImg(){
 
     
     var contentwrapper = document.querySelector("#content-wrapper");
-    var vendorListWrapper = document.querySelector("#vendor-list-wrapper"); //den här för att den är absolute
+    var vendorListWrapper = document.querySelector("#vendor-list-wrapper"); 
     contentwrapper.style.top = "0px";
     vendorListWrapper.style.top = "calc(100vh - 80px)";
 
