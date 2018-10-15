@@ -354,3 +354,9 @@ input[type=submit]:hover {
   .grid-container-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr); } }
+.mySlides {
+  height: auto;
+  width: 100vw; }
+
+#content-collection {
+  overflow: hidden; }
