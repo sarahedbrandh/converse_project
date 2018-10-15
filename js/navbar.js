@@ -8,37 +8,10 @@ function navToggle() {
 }
 
 
-<<<<<<< HEAD
-    var menuItems = document.querySelectorAll('.menu-items');
-    menuItems.forEach(function(item){
-        
-        
-    });
-    
-
-
-
- //har valt menyalternativen
-
-// STEG 2 Om man klickar visa den item 
-
-// steg 3 Dölj nuvarande sektion 
-
-function menuClick(EventTarget){
-    document.querySelectorAll('.section-content'). 
-        content.style.visibility = "hidden" ;addEventListener('click' () => {
-        console.log('pressed');
-        
-        })
-
-
-
-=======
 
 //
 //TODO: menuClick(event) -> dölja alla sectioner .section-content  (hideContent())
 //                       -> visa innehåll för aktuell .section-content #content-?   (showContent(event))
->>>>>>> master
 
 //TODO: hideContent()         hämta alla divar och sätt dem till hidden
 //TODO: showContent(event)    visability: visable  hämta div med motsvarande id och gör den visable
@@ -58,6 +31,7 @@ var menuItems = document.querySelectorAll(".menu-items");
 menuItems.forEach(function(item){
     item.addEventListener('click', changeNav, false);
     console.log(item);
+    item.addEventListener('click', changeContent, false);
 });
 
 function changeNav(event) {
@@ -66,6 +40,19 @@ function changeNav(event) {
     topNav.style.backgroundColor = "white";
     removeHeaderImg();
     
+}
+
+function changeContent(event) {
+    var getAllContent = document.querySelectorAll('.section-content');
+    getAllContent.forEach(function (item){ 
+        item.classList.add('hidden');
+    });
+    var menuId = event.target.id;
+    console.log(menuId);
+    var addElement = document.querySelector('#content-' + menuId);
+    addElement.classList.remove('hidden');
+    
+
 }
 
 
