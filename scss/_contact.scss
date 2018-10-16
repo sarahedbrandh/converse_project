@@ -120,14 +120,19 @@ input[type=submit]:hover {
             margin-left:auto;
             margin-right: auto;
             width: 60vw;
-            height: 40vh;
-            border:solid black 0.2em;
+            height: auto;
+            
         }
+
+
         .grid-container-form {
+            display: -ms-grid;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+
         }
-        
+
     }
 
 

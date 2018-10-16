@@ -59,8 +59,8 @@
                 overflow: scroll;
                 height: 50vh;
                 
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                
                 
                 .vendor-item {
                     margin: 1em 4em;
@@ -75,6 +75,10 @@
         #vendor-list-content{
             width: 80vw;
         }
+    }
+
+    #vendor-list-vendors {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
     
