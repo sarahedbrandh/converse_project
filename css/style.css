@@ -238,9 +238,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden; }
     #content-about:not(.hidden) #about-us-text {
-      height: 70vh;
+      height: 50vh;
       overflow: scroll;
-      padding: 8em; } }
+      padding: 8em 4em; } }
 #content-contact {
   display: block;
   max-height: 100vh;
