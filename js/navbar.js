@@ -64,15 +64,16 @@ function removeHeaderImg(){
     var headerImg = document.querySelector("#header-img");
     console.log(headerImg);
     headerImg.style.top = "-100vh";
+    slideUpContent();
+}
 
-
-    
+function slideUpContent(){
     var contentwrapper = document.querySelector("#content-wrapper");
     var vendorListWrapper = document.querySelector("#vendor-list-wrapper"); 
     contentwrapper.style.top = "0px";
     vendorListWrapper.style.top = "calc(100vh - 80px)";
 
-  
+    //sätt allt annat innehåll till left 100vw
 }
 
 
