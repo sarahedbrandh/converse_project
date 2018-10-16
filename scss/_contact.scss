@@ -34,7 +34,7 @@
     background-color: #ffffff;
     margin: auto;
     padding: 2em;
-    border: 2px solid rgb(117, 117, 117);
+  
     
     height: 100vh;
 }
@@ -130,7 +130,19 @@ input[type=submit]:hover {
             display: grid;
             -ms-grid-columns: 1fr 1fr;
             grid-template-columns: 1fr 1fr;
+            -ms-grid-rows: 1fr;
+            grid-template-rows: 1fr;
 
+            .grid-item-form1 {
+                -ms-grid-row: 1;
+                -ms-grid-column: 1;
+              }      
+            .grid-item-form2{
+                -ms-grid-row: 1;
+                -ms-grid-column: 2;
+              }   
+
+            
         }
 
     }
