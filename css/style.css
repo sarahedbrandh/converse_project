@@ -355,5 +355,14 @@ input[type=submit]:hover {
   height: auto;
   width: 100vw; }
 
-#content-collection {
-  overflow: hidden; }
+#content-collection:not(.hidden) {
+  overflow: scroll; }
+
+.box-slider {
+  border: 0.2em solid black;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 1em 1.5em 1em;
+  margin-top: 5em;
+  text-align: justify; }
