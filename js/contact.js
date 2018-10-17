@@ -1,5 +1,5 @@
 
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('contactModal');
 
 
 var openContact = document.getElementById("menuClick");
