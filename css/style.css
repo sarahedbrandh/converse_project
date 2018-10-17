@@ -351,6 +351,10 @@ input[type=submit]:hover {
     .grid-container-form .grid-item-form2 {
       -ms-grid-row: 1;
       -ms-grid-column: 2; } }
+#content-collection {
+  height: 100vh;
+  overflow: scroll; }
+
 .mySlides {
   height: auto;
   width: 100vw; }
@@ -360,10 +364,14 @@ input[type=submit]:hover {
   width: 85vw;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5em;
   padding: 0.5em 1em 1.5em 1em;
   margin-top: 5em;
   text-align: justify; }
+  .box-slider h2 {
+    text-align: center; }
 
-@media screen and (min-width: 1050px) {
-  .box-slider {
-    visibility: hidden; } }
+.box-sign {
+  text-align: center;
+  font-size: 2em;
+  color: #2d9e9e; }
